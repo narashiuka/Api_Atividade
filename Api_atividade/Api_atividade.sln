@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Api_atividade", "Api_atividade\Api_atividade.pyproj", "{A3C1B057-3F77-4616-9756-A71CE2C5EDCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C1B057-3F77-4616-9756-A71CE2C5EDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C1B057-3F77-4616-9756-A71CE2C5EDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C1B057-3F77-4616-9756-A71CE2C5EDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C1B057-3F77-4616-9756-A71CE2C5EDCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8A5E3B7-4405-4A4E-AB3B-1EA92177400E}
+	EndGlobalSection
+EndGlobal
