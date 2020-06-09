@@ -8,7 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 #As quatro linhas abaixo são necessárias para se conseguir trabalhar com este banco de dados
 engine = create_engine('sqlite:///atividades.db', convert_unicode=True)
-db_session = scoped_session(sessionmaker(autocommit=False, binds=engine))
+db_session = scoped_session(sessionmaker(autocommit=False, bind=engine))
 
 Base = declarative_base()
 Base.query = db_session.query_property()
@@ -20,7 +20,15 @@ class Pessoas(Base):
     idade = Column(Integer)
 
     def __repr__(self):
-        return '<Pessoa {}>'.format(self.nome)
+        return '<Atividades {}>'.format(self.nome)
+
+    def save(self):
+        db_session.add(self)
+        db_session.commit()
+
+    def delete(self):
+        db_session.delete(self)
+        db_session.commit()
 
 class Atividades(Base):
     __tablename__='atividades'
